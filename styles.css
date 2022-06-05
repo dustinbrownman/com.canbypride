@@ -1,0 +1,165 @@
+@font-face {
+  font-family: "Fjalla One";
+  src: url('FjallaOne-Regular.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Fjalla One', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #fff;
+  background: #000;
+}
+
+a {
+  position: relative;
+  color: #74d7ee;
+  text-decoration: none;
+  width: 100%;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #74d7ee;
+  transition: color 0.3s ease;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #fff;
+  transform: scaleX(0);
+  transform-origin: top left;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+a:hover::before {
+  background-color: #74d7ee;
+  transform: scaleX(1);
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-image: url('./images/rainbow-bar.svg');
+  background-repeat: repeat-y;
+}
+
+.main {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.content {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  /* max-width: 200px; */
+}
+
+.header h1 {
+  font-size: 5em;
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  width: 100%;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.border-top {
+  border-top: 5px solid #ddd;
+}
+
+.large-margin {
+  margin-top: 40px;
+}
+
+.section h2 {
+  font-size: 1.75em;
+  margin: 0;
+  padding: 0;
+}
+
+.section p {
+  font-size: 1.25em;
+  margin: 0;
+  padding: 0;
+}
+
+.aside {
+  min-height: 820px;
+  align-self: flex-end;
+  width: 50%;
+  display: none;
+}
+
+@media (min-width: 1012px) {
+  .aside {
+    display: block;
+  }
+
+  .main {
+    justify-content: flex-end;
+    margin-top: 0;
+  }
+
+  .container {
+    background-image: none;
+  }
+}
+
+.aside svg {
+  height: 100%;
+  width: 100%;
+}
+
+.aside img {
+  width: 100%;
+  height: 100%;
+}
+
+.aside svg rect {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.small {
+  font-size: 1em;
+}
+
+.medium {
+  font-size: 1.5em;
+}
+
+.large {
+  font-size: 2em;
+}
+
+.larger {
+  font-size: 2.5em;
+}
+
+.rainbow-text {
+  background-image: linear-gradient(to right, #e51e25, #f68c1e, #f9ee13, #0d8040, #3e5fac, #732a85);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}

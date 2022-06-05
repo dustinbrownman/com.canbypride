@@ -1,0 +1,21 @@
+<svg height="840px" width="100%"
+  xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="bg" patternUnits="userSpaceOnUse" width="440" height="40">
+      <rect id="svg_4" height="40" x="0" y="0" fill="#ffd800" width="40px"/>
+      <rect id="svg_6" height="40" x="40" y="0" fill="#ffffff" width="40px" />
+      <rect id="svg_7" height="40" x="80" y="0" fill="#ffafc8" width="40px" />
+      <rect id="svg_8" height="40" x="120" y="0" fill="#74d7ee" width="40px" />
+      <rect id="svg_9" height="40" x="160" y="0" fill="#613915" width="40px" />
+      <rect id="svg_10" height="40" x="200" y="0" fill="#e51e25" width="40px" />
+      <rect id="svg_11" height="40" x="240" y="0" fill="#f68c1e" width="40px" />
+      <rect id="svg_12" height="40" x="280" y="0" fill="#f9ee13" width="40px" />
+      <rect id="svg_13" height="40" x="320" y="0" fill="#0d8040" width="40px" />
+      <rect id="svg_14" height="40" x="360" y="0" fill="#3e5fac" width="40px" />
+      <rect id="svg_15" height="40" x="400" y="0" fill="#732a85" width="40px" />
+    </pattern>
+  </defs>
+
+  <rect width="100%" height="40px" fill="url(#bg)"/>
+
+</svg>
